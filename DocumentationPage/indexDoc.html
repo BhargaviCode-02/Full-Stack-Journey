@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C++ Technical Documentation</title>
+  <link rel="stylesheet" href="indexDoc.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>C++ Documentation</header>
+    <a class="nav-link" href="#Introduction_to_C_plus_plus">Introduction_to_C_plus_plus</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Control_Structures">Control Structures</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Pointers_and_References">Pointers and References</a>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_C_plus_plus">
+      <header>Introduction_to_C_plus_plus</header>
+      <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C language.</p>
+      <p>It supports multiple programming paradigms including procedural, object-oriented, and generic programming.</p>
+      <p>C++ is widely used for system programming, game development, and high-performance applications.</p>
+      
+      <ul>
+        <li>High performance and efficiency</li>
+        <li>Strong memory management capabilities</li>
+        <li>Rich standard library (STL)</li>
+        <li>Multi-paradigm support</li>
+      </ul>
+    </section>
+    
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>C++ supports several fundamental data types including <code>int</code>, <code>float</code>, <code>double</code>, and <code>char</code>.</p>
+      <p>Variables must be declared with a type before use: <code>int age = 25;</code></p>
+      <p>Boolean values use <code>bool</code> type with <code>true</code> and <code>false</code> literals.</p>
+      
+      <code>
+int main() {
+  int x = 10;
+  double pi = 3.14159;
+  return 0;
+}
+      </code>
+      
+      <p>Strings are handled via <code>#include &lt;string&gt;</code> and <code>std::string</code>.</p>
+    </section>
+    
+    <section class="main-section" id="Control_Structures">
+      <header>Control Structures</header>
+      <p>C++ provides <code>if</code>, <code>else if</code>, <code>else</code> for conditional execution.</p>
+      <p>Switch statements handle multiple discrete conditions efficiently.</p>
+      
+      <ul>
+        <li><code>for</code> loops for known iteration counts</li>
+        <li><code>while</code> loops for condition-based iteration</li>
+        <li><code>do-while</code> loops execute at least once</li>
+      </ul>
+      
+      <p>Range-based for loops (C++11): <code>for(auto&amp; item : container)</code></p>
+    </section>
+    
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions promote code reusability and modularity. Declaration syntax: <code>returnType functionName(parameters);</code></p>
+      <p>Pass-by-value is default; pass-by-reference uses <code>&amp;</code> modifier.</p>
+      
+      <code>
+void swap(int&amp; a, int&amp; b) {
+  int temp = a;
+  a = b;
+  b = temp;
+}
+      </code>
+      
+      <p>Function overloading allows multiple functions with same name but different parameters.</p>
+      <p>Default parameters: <code>int add(int a, int b = 0)</code></p>
+    </section>
+    
+    <section class="main-section" id="Pointers_and_References">
+      <header>Pointers and References</header>
+      <p>Pointers store memory addresses: <code>int* ptr = &amp;variable;</code></p>
+      <p>References are aliases: <code>int&amp; ref = variable;</code></p>
+      
+      <ul>
+        <li><code>nullptr</code> for null pointers (C++11)</li>
+        <li>Pointer arithmetic for array traversal</li>
+        <li>Smart pointers (<code>unique_ptr</code>, <code>shared_ptr</code>) for memory safety</li>
+      </ul>
+      
+      <p>Dereference operator <code>*</code> accesses pointed-to value.</p>
+    </section>
+  </main>
+</body>
+</html>
